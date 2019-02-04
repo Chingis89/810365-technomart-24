@@ -54,7 +54,7 @@
           <li><a href="index.html"><img src="img/icon-home.svg" alt="Главная"></a></li>
           <li><a href="#">Каталог</a></li>
           <li><a href="#">Инструмент</a></li>
-          <li class="perforators-current">Перфораторы</li>
+          <li class="current">Перфораторы</li>
         </ul>
       </section>
       <h2>Перфораторы</h2>
@@ -63,12 +63,10 @@
         <form class="filter" action="https://echo.htmlacademy.ru" method="post" oninput="priceoutput.value=filter-price.value">
           <fieldset>
             <legend>Цена:</legend>
-            <label for="filter-price" class="visually-hidden"></label>
               <input type="range" name="filter-price" id="filter-price" min="0" max="30000" step="500">
-            <div class="filter-option output-area">
-              <output name="priceoutput"></output>
-            </div>
-          </fieldset>
+              <input type="text" name="min-price" value="0" id="min-price">
+              <input type="text" name="max=price" value="30000" id="max-price">
+            </fieldset>
           <fieldset>
             <legend>Производители:</legend>
             <ul>
