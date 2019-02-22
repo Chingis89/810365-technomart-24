@@ -56,7 +56,7 @@ a {
   left: 17px;
   width: 17px;
   height: 17px;
-  background-image: url(../img/icon-searсh.svg);
+  background-image: url(../img/icon-search.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -643,13 +643,26 @@ a {
 
 
 
+.manufacturers-item {
+  width: 220px;
+  margin-bottom: 20px;
+  min-height: 145px;
+}
 
 .manufacturers-list {
   list-style: none;
+  margin-bottom: 65px;
 }
 .manufacturers-item {
   border: 1px solid #eaeaea;
 }
+.manufacturers-item {
+  display: flex;
+}
+.manufacturers-item-image {
+  margin: auto;
+}
+
 .manufacturers-item:hover {
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
@@ -658,9 +671,14 @@ a {
   background-color: #ffffff;
   opacity: 0.3;
 }
+
+
 .main-column {
   background-color: #ffffff;
 }
+
+
+
 
 .service h2 {
   color: #000000;
@@ -676,20 +694,31 @@ a {
   color: #000000;
   font-family: "PT Sans", Arial, sans-serif;
 }
+
+
 .service-category {
+
     list-style: none;
 }
 .btn-service {
+  display: block;
+  box-sizing: border-box;
+  width: 240px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 22px;
   font-size: 21px;
   line-height: 30px;
   color: #ffffff;
   background-color: #32425c;
 }
+.btn-current {
+  background-color: #ffffff;
+  color: #32425c;
+}
 .service-item {
   background-color: #32425c;
 }
-
-
 .btn-service:hover {
   background-color: #293449;
 }
@@ -703,6 +732,56 @@ a {
   text-transform: uppercase;
   color: #32425c;
 }
+.service {
+  margin-bottom: 80px;
+}
+.service-wrapper {
+  background-color: #f4f8fa;
+  min-height: 522px;
+
+}
+.service-block-top {
+  display: flex;
+  flex-direction: column;
+}
+.service-block-top p {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  margin-bottom: 70px;
+}
+.service-block-top h2 {
+  margin-top: 68px;
+  margin-bottom: 35px;
+}
+.service-block-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-category,
+ .service-delivery p,
+ .service-delivery h3 {
+   margin: 0;
+   padding: 0;
+ }
+
+.service-delivery {
+  margin-left: 60px;
+}
+.service-delivery p {
+  width: 278px;
+}
+.service-delivery h3 {
+  margin-bottom: 33px;
+}
+
+
+
+
+
+
+
 .advantages {
   color: #000000;
   text-align: left;
@@ -1084,62 +1163,8 @@ img {
 
 
 
-.manufacturers-item {
-  width: 220px;
-  margin-bottom: 20px;
-  min-height: 145px;
-}
 
-.popular-manufacturers-list {
-  margin-bottom: 85px;
-}
-.service {
-  margin-bottom: 80px;
-}
-.service-wrapper {
-  background-color: #f4f8fa;
-  min-height: 522px;
 
-}
-.service-block-top {
-  display: flex;
-  flex-direction: column;
-}
-.service-block-top p {
-  margin: 0;
-  padding: 0;
-  width: 400px;
-  margin-bottom: 70px;
-}
-.service-block-top h2 {
-  margin-top: 68px;
-  margin-bottom: 35px;
-}
-.service-block-bottom {
-  display: flex;
-  justify-content: space-between;
-}
-
-.service-category,
- .service-delivery p,
- .service-delivery h3 {
-   margin: 0;
-   padding: 0;
- }
-.service-item {
-  width: 240px;
-  min-height: 61px;
-  margin-right: 40px;
-}
-.service-delivery {
-  margin-left: 60px;
-}
-.service-delivery p {
-  width: 278px;
-}
-.service-delivery h3 {
-  margin-bottom: 33px;
-}
 
 .sub-column {
   min-height: 455px;
