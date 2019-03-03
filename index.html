@@ -159,14 +159,14 @@
                     <a class="price-button" href="#">25500 Р.</a>
                   </p>
                 </li>
-                <li class="catalog-item">
+                <li class="catalog-item flag-position">
                   <p class="catalog-item-image new-flag">
                     <a href="catalog-item.html">
                       <img src="img/perforator_4.jpg" width="220" height="165"
                       alt="Перфоратор BOSCH BFG 2000">
                     </a>
                   </p>
-                    <ul class="catalog-item-to-buy catalog-wrapper">
+                    <ul class="catalog-item-to-buy catalog-wrapper new-flag">
                       <li><a class="catalog-buttons catalog-buttons-buy" href="#">Купить</a></li>
                       <li><a class="catalog-buttons catalog-buttons-bookmarks" href="#">В закладки</a></li>
                     </ul>
@@ -244,23 +244,36 @@
               </p>
             </div>
             <div class="service-block-bottom">
-              <ul class="service-category">
-                <li class="service-item"><a class="btn-service btn-current">Доставка</a></li>
-                <li class="service-item"><a class="btn-service" href="#">Гарантия</a></li>
-                <li class="service-item"><a class="btn-service" href="#">Кредит</a></li>
-              </ul>
-              <div class="service-delivery">
-                <h3>Доставка</h3>
-                <p>Мы с удовольствием доставим ваш товар прямо
-                  к вашему подъезду совершенно бесплатно!
-                  Ведь мы неплохо заработаем,
-                  поднимая его на ваш этаж!
-                </p>
+              <input type="radio" id="switch-1" name="service-switch" checked>
+              <input type="radio" id="switch-2" name="service-switch">
+              <input type="radio" id="switch-3" name="service-switch">
+              <div class="service-category">
+                <label for="switch-1" class="service-item btn-service">Доставка</label>
+                <label for="switch-2" class="service-item btn-service">Гарантия</label>
+                <label for="switch-3" class="service-item btn-service">Кредит</label>
               </div>
-              <img src="img/car.png" alt="Грузовик">
+              <div class="service-refinement-column">
+                <div class="service-refinement-delivery">
+                  <h3>Доставка</h3>
+                  <p>Мы с удовольствием доставим ваш товар прямо
+                    к вашему подъезду совершенно бесплатно!</p>
+                  <p>Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                </div>
+                <div class="service-refinement-guarantee">
+                  <h3>Гарантия</h3>
+                  <p>Если купленный у нас товар поломается или заискрит,<br>
+                    а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
+                  <p>Дом уж восстановите как-нибудь сами.</p>
+                </div>
+                <div class="service-refinement-credit">
+                  <h3>Кредит</h3>
+                  <p>Залезть в долговую яму стало проще!</p>
+                  <p>Кредитные консультанты придут вам на помощь.</p>
+                  <a class="button service-button" href="#">Отправить заявку</a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
       </section>
       <div class="sub-column">
         <div class="container">
@@ -341,5 +354,43 @@
         </div>
       </div>
     </footer>
+
+    <section class="modal modal-message">
+      <h2 class="visually-hidden">Письмо нам</h2>
+      <form class="message-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-top-block">
+          <p class="message-item">
+            <label for="user-name">Ваше имя:</label>
+            <input class="user-name-input" type="text" name="user-name" placeholder="Имя Фамилия" id="user-name">
+          </p>
+          <p class="message-item">
+            <label for="user-email">Ваш e-mail:</label>
+            <input class="user-email-input" type="text" name="user-email" placeholder="email@examle.com" id="user-email">
+          </p>
+          <p class="message-item message-text-block">
+            <label for="message-text">Текст письма:</label>
+            <textarea name="message-text" placeholder="В свободной форме" id="message-text"></textarea>
+          </p>
+        </div>
+        <div class="modal-bottom-block">
+          <button class="button btn-modal" type="submit">Отправить</button>
+        </div>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/big-map.jpg" width="940" height="446" alt="Офис компании по адресу: г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8">
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+
+
+
+
+
   </body>
 </html>
