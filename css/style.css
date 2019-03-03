@@ -48,7 +48,6 @@ a {
 }
 
 .searсh-form input {
-
   box-sizing: border-box;
   width: 270px;
   min-height: 42px;
@@ -59,7 +58,6 @@ a {
   background-image: url("../img/icon-search3.svg");
   background-repeat: no-repeat;
   background-position: 17px 12px;
-
 }
 
 .searсh-form input:hover {
@@ -1296,16 +1294,39 @@ margin-bottom: 86px;
 .filters fieldset {
   border: none;
 }
-.filter input[type="range"] {
-  width: 180px;
+.range-line {
+  position: relative;
+  width: 152px;
+  height: 2px;
   margin-left: 20px;
-  margin-right: 20px;
+
+  background-color: #00ca74;
+  border-right: 30px solid #d7dcde;
 }
+.range-line::before {
+  position: absolute;
+  content: "";
+  top: -11px;
+  width: 20px;
+  height: 22px;
+  background-image: url("../img/filter-button.png");
+}
+.range-line::after {
+  position: absolute;
+  content: "";
+  top: -11px;
+  left: 140px;
+  width: 20px;
+  height: 22px;
+  background-image: url("../img/filter-button.png");
+
+}
+
 .range-border {
-  box-sizing: border-box;
+  display: flex;
+  align-items: center;
   background-color: #f7f3ec;
   min-height: 80px;
-  padding-top: 30px;
   margin-bottom: 10px;
 }
 .filter input[type="range"],
