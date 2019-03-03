@@ -292,14 +292,6 @@ input[type="text"]::-moz-placeholder {
   color: #ffffff;
   opacity: 0.5;
 }
-
-
-
-
-
-.category-item.technics {
-  margin-right: -20px;
-}
 .category-top,
 .category-bottom {
   display: flex;
@@ -1834,7 +1826,7 @@ img {
 
 
 .modal {
-
+  display: none;
   position: fixed;
   color: #000000;
   background-color: #ffffff;
