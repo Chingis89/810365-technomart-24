@@ -5,7 +5,7 @@
     <title>Главная страница: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="main-header">
@@ -40,9 +40,9 @@
           <div class="main-header-panel-bottom">
             <nav>
               <ul class="navigation-panel">
-                <li><a href="#">Главная</a></li>
+                <li><a href="index.html">Главная</a></li>
                 <li><a href="#">Компания</a></li>
-                <li><a href="#">Каталог</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="#">Новости</a></li>
                 <li><a href="#">Спецпредложения</a></li>
                 <li><a href="#">Доставка</a></li>
@@ -74,8 +74,18 @@
             </div>
             <div class="category-bottom">
               <div class="slider">
-                <img src="img/slider-2.jpg" alt="Дрели. Соседям на радость!" width="620" height="266">
-                <a class="button visually-hidden" href="catalog.html">Открыть каталог</a>
+                <input type="radio" id="slider-radio-1" name="slider-radio" checked>
+                <input type="radio" id="slider-radio-2" name="slider-radio">
+                <div class="slider-controls">
+                  <label class="slider-label-1" for="slider-radio-1"></label>
+                  <label class="slider-label-2" for="slider-radio-2"></label>
+                </div>
+                <div class="slides-image">
+                  <img class="slider-1" src="img/slider-1.jpg" alt="Перфораторы. Настоящие мужские игрушки" width="620" height="266">
+                  <img class="slider-2" src="img/slider-2.jpg" alt="Дрели. Соседям на радость!" width="620" height="266">
+                  <a class="button slider-button" href="catalog.html">Открыть каталог</a>
+                </div>
+
               </div>
               <div class="category-column-right">
                 <div class="category-item discounts">
@@ -87,7 +97,7 @@
                   <a href="#">Бесплатно</a>
                 </div>
               </div>
-            </div>
+          </div>
           </section>
           <section class="popular-item">
             <div class="popular-item-panel">
