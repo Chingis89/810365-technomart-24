@@ -5,7 +5,7 @@
     <title>Внутренняя страница: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="inner-page">
     <header class="main-header">
@@ -24,21 +24,23 @@
           </div>
         </div>
       </div>
-      <div class="panel-middle-wrapper">
+      <div class="panel-middle-wrapper top-middle-wrapper">
         <div class="container">
           <div class="main-header-panel-middle">
             <p class="site-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
             <div class="header-contacts">
               <p>+7 (812) 555-05-55</p>
-              <p>г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</p>
+              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             </div>
             <div class="login-form">
               <div class="login">
-                <span>Равшан Джамшутович</span>
+                <a class="enter-login" href="https://vk.com/people/%D0%A0%D0%B0%D0%B2%D1%88%D0%B0%D0%BD_%D0%94%D0%B6%D0%B0%D0%BC%D1%88%D1%83%D1%82%D0%BE%D0%B2%D0%B8%D1%87"></a>
+                <a href="https://vk.com/people/%D0%A0%D0%B0%D0%B2%D1%88%D0%B0%D0%BD_%D0%94%D0%B6%D0%B0%D0%BC%D1%88%D1%83%D1%82%D0%BE%D0%B2%D0%B8%D1%87">Равшан Джамшутович</a>
+                <a href="index.html" class="exit-login"></a>
               </div>
               <ul class="personal-menu">
                 <li><a href="#">Мои заказы</a></li>
-                <li><a href="#">Личный кабинет</a></li>
+                <li><a href="#" class="personal-account">Личный кабинет</a></li>
               </ul>
             </div>
           </div>
@@ -159,6 +161,8 @@
                   <li><a href="#">По типу</a></li>
                   <li><a href="#">По функционалу</a></li>
                 </ul>
+                <a href="#" class="sorting-toggle-top" aria-label="Сортировка вверх"></a>
+                <a href="#" class="sorting-toggle-bottom" aria-label="Сортировка вниз"></a>
               </div>
               <section class="catalog">
               <h3 class="visually-hidden">Список перфораторов</h3>
@@ -389,8 +393,8 @@
             </ul>
           </div>
           <div class="footer-panel-middle">
-            <p>г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8<br>
-              +7(812)555-05-55
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+              +7 (812) 555-05-55
             </p>
             <ul class="footer-bottom-navigation">
               <li><a href="#">Материалы</a></li>
@@ -415,11 +419,11 @@
               </ul>
             </div>
             <p>
-              Обратная связь:<br>
+              Обратная связь:
               <a href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
-            <p>Разработано — <br>
-              <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+            <p>Разработано —
+              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
           </div>
         </div>
@@ -436,6 +440,6 @@
       </div>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
-    <script src="js/popup.js"></script>
+    <script src="js/popup.min.js"></script>
   </body>
 </html>
