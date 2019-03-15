@@ -52,7 +52,7 @@ a {
   width: 270px;
   min-height: 42px;
   padding-left: 49px;
-  background-color:rgba(41,52,73);
+  background-color: #293449;
   text-transform: capitalize;
   border: none;
   background-image: url("../img/icon-search3.svg");
@@ -736,9 +736,8 @@ input[type="text"]::-moz-placeholder {
   display: -ms-flexbox;
   display: flex;
   border: 1px solid #eaeaea;
-}
-.manufacturers-item-image {
-  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 .manufacturers-item:hover {
   -webkit-box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
